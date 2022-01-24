@@ -1,0 +1,25 @@
+.relatedArticleDiv {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.relatedArticleIMGDiv {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid rgb(150, 156, 156); */
+  width: 193px;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 20%);
+  margin-right: 17px;
+}
+.relatedArticleImage {
+  display: flex;
+  width: 100%;
+  height: 180px;
+}
+.relatedArticleTitle {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+  font-weight: bold;
+  font-size: 15px;
+}
