@@ -29,17 +29,18 @@ const relatedArticles = [
 let element = document.getElementById("relatedDiv");
 relatedArticles.forEach((item) => {
   let div = document.createElement("div");
-  div.className = "relatedArticleIMGDiv";
+  div.className = "related-article-img-div";
   let image = document.createElement("img");
+  let anchor = document.createElement("a");
+  anchor.setAttribute("href", item.url);
   image.setAttribute("src", item.img);
-  image.className = "relatedArticleImage";
-  image.addEventListener("click", function () {
-    window.location.replace(item.url);
-  });
+  image.className = "related-article-image";
   let title = document.createElement("label");
   title.textContent = item.title;
-  title.className = "relatedArticleTitle";
+  //   title.className = "related-article-title";
+  anchor.className = "related-article-anchor";
   div.appendChild(image);
   div.appendChild(title);
-  element.appendChild(div);
+  anchor.appendChild(div);
+  element.appendChild(anchor);
 });
