@@ -32,6 +32,10 @@ var relatedArticles = [
 ];
 
 function createArticleRecommendations(articlesList, containerDivID) {
+  var element = document.getElementById(containerDivID);
+  if (!element) {
+    return;
+  }
   function getArticleDiv(articleObject) {
     var div = document.createElement("div");
     div.className = "related-article-img-div";
@@ -47,11 +51,10 @@ function createArticleRecommendations(articlesList, containerDivID) {
     anchor.appendChild(image);
     anchor.appendChild(title);
     div.appendChild(anchor);
-    containerDivID.appendChild(div);
+    return div;
   }
   for (var i = 0; i < articlesList.length; i++) {
-    getArticleDiv(articlesList[i]);
+    element.appendChild(getArticleDiv(articlesList[i]));
   }
 }
-var element = document.getElementById("related-div");
-createArticleRecommendations(relatedArticles, element);
+createArticleRecommendations(relatedArticles, "related-div");
