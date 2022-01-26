@@ -48,8 +48,8 @@ openModalBtn.addEventListener("click", () => {
     "./photos/logo_v2.jpg",
     "WordTraveling.com"
   );
-});
-var reloadBtn = document.getElementById("adb-reload-btn");
-reloadBtn.addEventListener("click", () => {
-  window.location.reload();
+  var reloadBtn = document.getElementById("adb-reload-btn");
+  reloadBtn.addEventListener("click", () => {
+    window.location.reload();
+  });
 });
