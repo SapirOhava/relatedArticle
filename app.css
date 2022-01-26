@@ -63,13 +63,14 @@ body {
 }
 .adb-turn-off-adblocker-span {
   font-weight: bold;
+  font-size: 20px;
 }
 .adb-logo-img {
   width: 200px;
 }
 .adb-turn-off-adblocker-ul li {
-  line-height: 30px;
   width: 200px;
+  margin-bottom: 15px;
 }
 .adb-logo-img-div {
   display: flex;
