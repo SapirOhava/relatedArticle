@@ -47,6 +47,7 @@ function displayAdblockerAlert(containerID, websiteLogoURL, siteName) {
   reloadBtn.addEventListener("click", () => {
     window.location.reload();
   });
+  document.body.style.overflow = "hidden";
 }
 var openModalBtn = document.getElementById("adb-open-modal");
 openModalBtn.addEventListener("click", () => {
