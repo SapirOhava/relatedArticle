@@ -10,7 +10,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -38,6 +38,7 @@ body {
   color: white;
   border: none;
   padding: 7px;
+  cursor: pointer;
 }
 .adb-logo-div {
   display: flex;
@@ -59,7 +60,7 @@ body {
   font-weight: bold;
 }
 .adb-sub-title-adbolck-span {
-  font-size: 15px;
+  font-size: 19px;
 }
 .adb-turn-off-adblocker-span {
   font-weight: bold;
@@ -77,8 +78,11 @@ body {
   justify-content: center;
   margin-bottom: 15px;
 }
-.adb-btn-div {
+.adb-img-btn-div {
   display: flex;
-  justify-content: end;
-  margin-right: 55px;
+  flex-direction: column;
+  align-items: center;
+}
+.adb-btn-div {
+  margin-top: 10px;
 }

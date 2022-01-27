@@ -31,15 +31,22 @@ function displayAdblockerAlert(containerID, websiteLogoURL, siteName) {
               <li>Reload your browser or click the button below to continue</li>
             </ul>
           </div>
-
+          <div class="adb-img-btn-div">
           <img class="adb-img-adblock" src="./photos/adblock.png" />
-        </div>
-        <div class="adb-btn-div">
-          <button id="adb-reload-btn" class="adb-btn-adblock">Reload Website</button>
+
+          <div class="adb-btn-div">
+            <button id="adb-reload-btn" class="adb-btn-adblock">Reload Website</button>
+          </div>
+
+          </div>
         </div>
       </div>`;
 
   container.appendChild(modalDiv);
+  var reloadBtn = document.getElementById("adb-reload-btn");
+  reloadBtn.addEventListener("click", () => {
+    window.location.reload();
+  });
 }
 var openModalBtn = document.getElementById("adb-open-modal");
 openModalBtn.addEventListener("click", () => {
@@ -48,8 +55,4 @@ openModalBtn.addEventListener("click", () => {
     "./photos/logo_v2.jpg",
     "WordTraveling.com"
   );
-  var reloadBtn = document.getElementById("adb-reload-btn");
-  reloadBtn.addEventListener("click", () => {
-    window.location.reload();
-  });
 });
